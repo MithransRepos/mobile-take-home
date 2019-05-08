@@ -23,17 +23,37 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                             </searchBar>
                             <searchBar contentMode="redraw" placeholder="Destination Airport IATA" translatesAutoresizingMaskIntoConstraints="NO" id="z57-9M-DIo">
-                                <rect key="frame" x="0.0" y="154" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" returnKeyType="search"/>
                             </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eCA-Yf-UZM">
+                                <rect key="frame" x="0.0" y="200" width="414" height="662"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlP-rX-IMa">
+                                <rect key="frame" x="24" y="752" width="366" height="100"/>
+                                <color key="backgroundColor" white="0.49640551643192488" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="axN-kC-q1Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="eCA-Yf-UZM" firstAttribute="top" secondItem="z57-9M-DIo" secondAttribute="bottom" id="0m5-ES-8hi"/>
+                            <constraint firstItem="eCA-Yf-UZM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6Bk-Ia-jRA"/>
+                            <constraint firstItem="DlP-rX-IMa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Eke-Ka-q2v"/>
                             <constraint firstItem="z57-9M-DIo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GHe-YJ-0xf"/>
                             <constraint firstItem="BIX-li-51f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZwP-N1-LDb"/>
                             <constraint firstItem="z57-9M-DIo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bRd-NL-Duo"/>
-                            <constraint firstItem="z57-9M-DIo" firstAttribute="top" secondItem="BIX-li-51f" secondAttribute="bottom" constant="10" id="dre-Dc-rXI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DlP-rX-IMa" secondAttribute="bottom" constant="10" id="dAM-Qg-A4D"/>
+                            <constraint firstItem="z57-9M-DIo" firstAttribute="top" secondItem="BIX-li-51f" secondAttribute="bottom" id="dre-Dc-rXI"/>
                             <constraint firstItem="BIX-li-51f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mSg-6X-1b2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DlP-rX-IMa" secondAttribute="trailing" constant="24" id="nJJ-9X-qds"/>
+                            <constraint firstItem="eCA-Yf-UZM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qnw-Fs-WB9"/>
+                            <constraint firstItem="eCA-Yf-UZM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tOT-rZ-cA4"/>
                             <constraint firstItem="BIX-li-51f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xtu-7Z-3ww"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -41,12 +61,14 @@
                     <navigationItem key="navigationItem" title="Guestlogix" id="Kb0-h4-CnA"/>
                     <connections>
                         <outlet property="destinationAirportSearchbar" destination="z57-9M-DIo" id="4bb-lm-ijM"/>
+                        <outlet property="mapView" destination="eCA-Yf-UZM" id="dZY-1l-jx0"/>
+                        <outlet property="routeLabel" destination="DlP-rX-IMa" id="622-Po-kBF"/>
                         <outlet property="sourceAirportSearchbar" destination="BIX-li-51f" id="eUv-A7-p2j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="548" y="42"/>
+            <point key="canvasLocation" x="547.82608695652175" y="41.517857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GGJ-qn-bo3">

@@ -7,18 +7,18 @@
 //
 
 import Foundation
+import CoreLocation
 
 protocol GLRouteSearchViewModelDelegate {
     func showErrorMessage(message: String)
-    func searchSuccess(route: [Edge<Airport>])
+    func searchSuccess(route: RouteInfo)
 }
-
+typealias RouteInfo = (aiports: [Airport], coordinates: [CLLocationCoordinate2D], path: String)
 class GLRouteSearchViewModel {
     
     private var graph = AdjacencyList<Airport>()
     private var airlineMap: [String: Airline] = [:]
     private var airportVertexMap: [String: Vertex<Airport>] = [:]
-    private var airportIATAArray: [String] = []
     private var dijkstraGraph: Dijsktra<Airport>?
     var delegate: GLRouteSearchViewModelDelegate?
     
@@ -31,7 +31,6 @@ class GLRouteSearchViewModel {
     private func computeGraph() {
         self.airlineMap = CSVHelper.parseAirlineCSV()
         self.airportVertexMap = CSVHelper.parseAirportCSV(graph: &graph)
-        self.airportIATAArray = Array(airportVertexMap.keys)
         CSVHelper.parseRouteCSV(airlineMap: airlineMap, airportVertexMap: airportVertexMap, graph: &graph)
     }
     
@@ -51,7 +50,27 @@ class GLRouteSearchViewModel {
     }
     
     
+    private func getAirportsFromRoute(route: [Edge<Airport>]){
+        var airports: [Airport] = []
+        var points: [CLLocationCoordinate2D] = []
+        var airlines: [String] = []
+        var pathText: String = ""
+        for path in route{
+            let sourceAirport = path.source.data
+            let destinationAirport = path.destination.data
+            addAirportDetails(airport: sourceAirport, airports: &airports, points: &points)
+            addAirportDetails(airport: destinationAirport, airports: &airports, points: &points)
+            airlines.append(path.via ?? "")
+            pathText += "\(path.source.data.iata) -> \(path.destination.data.iata) via: \(path.via ?? "")\n"
+        }
+        self.delegate?.searchSuccess(route: (airports, points, pathText))
+    }
     
+    private func addAirportDetails(airport: Airport, airports: inout [Airport], points: inout [CLLocationCoordinate2D]){
+        if airports.contains(airport) { return }
+        airports.append(airport)
+        points.append(CLLocationCoordinate2DMake(airport.latitude, airport.longitude))
+    }
 }
 extension GLRouteSearchViewModel{
     
@@ -84,7 +103,7 @@ extension GLRouteSearchViewModel{
         if route.count == 0 {
             self.delegate?.showErrorMessage(message: ErrorMessage.noRoute)
         }else{
-            self.delegate?.searchSuccess(route: route)
+            self.getAirportsFromRoute(route: route)
         }
     }
     
