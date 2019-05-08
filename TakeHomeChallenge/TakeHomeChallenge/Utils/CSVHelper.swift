@@ -33,14 +33,15 @@ class CSVHelper {
         return data
     }
     
-    static func parseAirportCSV() -> [String: Vertex<Airport>]{
+    static func parseAirportCSV(graph: inout AdjacencyList<Airport>) -> [String: Vertex<Airport>]{
         var vertexMap: [String: Vertex<Airport>] = [:]
         guard let csvReader = getCSVReader(filename: CSVFile.airports) else { return vertexMap }
         do {
             let decoder = CSVRowDecoder()
             while csvReader.next() != nil {
                 let row = try decoder.decode(Airport.self, from: csvReader)
-                vertexMap[row.iata] = Vertex<Airport>(row)
+                let vertex = graph.createVertex(data: row)
+                vertexMap[row.iata] = vertex
             }
         } catch {
             // Invalid row format
@@ -49,14 +50,15 @@ class CSVHelper {
     }
     
     
-    static func parseRouteCSV(airportVertexMap: [String: Vertex<Airport>], graph: inout EdgeWeightedDigraph<Airport>) -> Void{
+    static func parseRouteCSV(airlineMap: [String: Airline], airportVertexMap: [String: Vertex<Airport>], graph: inout AdjacencyList<Airport>) -> Void{
         guard let csvReader = getCSVReader(filename: CSVFile.routes) else { return }
         do {
             let decoder = CSVRowDecoder()
             while csvReader.next() != nil {
                 let row = try decoder.decode(Route.self, from: csvReader)
+                let airlineName = airlineMap[row.airlineId]?.name
                 if let originVertex = airportVertexMap[row.origin], let destinationVertex = airportVertexMap[row.destination]{
-                        graph.addEdge(source: originVertex, destination: destinationVertex, weight: 1)
+                        graph.addDirectedEdge(from: originVertex, to: destinationVertex, weight: 1, via: airlineName)
                 }
             }
         } catch {

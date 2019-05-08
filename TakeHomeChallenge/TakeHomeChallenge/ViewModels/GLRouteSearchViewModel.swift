@@ -13,26 +13,24 @@ class GLRouteSearchViewModel {
 
     var airlineMap: [String: Airline] = [:]
     var airportVertexMap: [String: Vertex<Airport>] = [:]
-    var graph = EdgeWeightedDigraph<Airport>()
+    var graph = AdjacencyList<Airport>()
     var airportIATAArray: [String] = []
     
     init() {
-            self.computeGraph()
+        self.computeGraph()
     }
     
     
     func computeGraph() {
-        self.airportVertexMap = CSVHelper.parseAirportCSV()
-        self.airportIATAArray = Array(airportVertexMap.keys)
-        self.graph.addVertexes(Array(airportVertexMap.values))
         self.airlineMap = CSVHelper.parseAirlineCSV()
-        CSVHelper.parseRouteCSV(airportVertexMap: airportVertexMap, graph: &graph)
+        self.airportVertexMap = CSVHelper.parseAirportCSV(graph: &graph)
+        CSVHelper.parseRouteCSV(airlineMap: airlineMap, airportVertexMap: airportVertexMap, graph: &graph)
         
-        guard let source = airportVertexMap["ABJ"] else { return }
-        guard let destionation = airportVertexMap["BRU"] else { return }
-        
-        let dijkstra = DijkstraShortestPath(graph, source: source)
-        
-        print("Path to Dublin: ", dijkstra.distanceTo(destionation))
+//        guard let source = airportVertexMap["ABJ"] else { return }
+//        guard let destionation = airportVertexMap["BRU"] else { return }
+//        
+//        let dijkstra = Dijsktra(graph: graph)
+//        let pathFromSource = dijkstra.shortestPath(from: source)
+//        print("Path: ", dijkstra.shortestPath(to: destionation, paths: pathFromSource))
     }
 }

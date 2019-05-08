@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		15BB4F9F107ABD8E71E1B0CF /* Pods_TakeHomeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789266FB5FDCEE07037ED9AD /* Pods_TakeHomeChallenge.framework */; };
 		5026FE2290177BB5D98A53DF /* Pods_TakeHomeChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA39AC0A98B63DC876DD6FF /* Pods_TakeHomeChallengeUITests.framework */; };
+		900E7ABB2282FC7400978A81 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E7AB32282FC7400978A81 /* Vertex.swift */; };
+		900E7ABC2282FC7400978A81 /* AdjancencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E7AB42282FC7400978A81 /* AdjancencyList.swift */; };
+		900E7ABD2282FC7400978A81 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E7AB52282FC7400978A81 /* PriorityQueue.swift */; };
+		900E7ABE2282FC7400978A81 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E7AB62282FC7400978A81 /* Graph.swift */; };
+		900E7ABF2282FC7400978A81 /* Dijsktra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E7AB72282FC7400978A81 /* Dijsktra.swift */; };
+		900E7AC02282FC7400978A81 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E7AB82282FC7400978A81 /* Queue.swift */; };
+		900E7AC12282FC7400978A81 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E7AB92282FC7400978A81 /* Edge.swift */; };
+		900E7AC22282FC7400978A81 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900E7ABA2282FC7400978A81 /* Heap.swift */; };
 		9027C1BE2282ACE300826197 /* airports.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9027C1BB2282ACE300826197 /* airports.csv */; };
 		9027C1BF2282ACE300826197 /* routes.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9027C1BC2282ACE300826197 /* routes.csv */; };
 		9027C1C02282ACE300826197 /* airlines.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9027C1BD2282ACE300826197 /* airlines.csv */; };
@@ -18,16 +26,6 @@
 		9027C1D22282C7A400826197 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1D12282C7A400826197 /* Airport.swift */; };
 		9027C1D42282C7B000826197 /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1D32282C7B000826197 /* Airline.swift */; };
 		9027C1D62282C7BA00826197 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1D52282C7BA00826197 /* Route.swift */; };
-		9027C1E22282E10500826197 /* EdgeWeightedDirectedCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1D82282E10500826197 /* EdgeWeightedDirectedCycle.swift */; };
-		9027C1E32282E10500826197 /* SimplePriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1D92282E10500826197 /* SimplePriorityQueue.swift */; };
-		9027C1E42282E10500826197 /* BellmanFordShortestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1DA2282E10500826197 /* BellmanFordShortestPath.swift */; };
-		9027C1E52282E10500826197 /* DirectedEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1DB2282E10500826197 /* DirectedEdge.swift */; };
-		9027C1E62282E10500826197 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1DC2282E10500826197 /* Vertex.swift */; };
-		9027C1E72282E10500826197 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1DD2282E10500826197 /* Destination.swift */; };
-		9027C1E82282E10500826197 /* ATStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1DE2282E10500826197 /* ATStack.swift */; };
-		9027C1E92282E10500826197 /* ATQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1DF2282E10500826197 /* ATQueue.swift */; };
-		9027C1EA2282E10500826197 /* EdgeWeightedDigraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1E02282E10500826197 /* EdgeWeightedDigraph.swift */; };
-		9027C1EB2282E10500826197 /* DijkstraShortestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1E12282E10500826197 /* DijkstraShortestPath.swift */; };
 		9027C1ED2282E6BB00826197 /* CSVHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1EC2282E6BB00826197 /* CSVHelper.swift */; };
 		90E87365228299EC0088CA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87364228299EC0088CA10 /* AppDelegate.swift */; };
 		90E8736A228299EC0088CA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E87368228299EC0088CA10 /* Main.storyboard */; };
@@ -62,6 +60,14 @@
 		789266FB5FDCEE07037ED9AD /* Pods_TakeHomeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeHomeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		859491DDAE03F3483AC7D65B /* Pods-TakeHomeChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeHomeChallengeUITests/Pods-TakeHomeChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		862E39F5BF381B62394395AC /* Pods-TakeHomeChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeHomeChallengeUITests/Pods-TakeHomeChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		900E7AB32282FC7400978A81 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		900E7AB42282FC7400978A81 /* AdjancencyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjancencyList.swift; sourceTree = "<group>"; };
+		900E7AB52282FC7400978A81 /* PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		900E7AB62282FC7400978A81 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		900E7AB72282FC7400978A81 /* Dijsktra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dijsktra.swift; sourceTree = "<group>"; };
+		900E7AB82282FC7400978A81 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		900E7AB92282FC7400978A81 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		900E7ABA2282FC7400978A81 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		9027C1BB2282ACE300826197 /* airports.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airports.csv; sourceTree = "<group>"; };
 		9027C1BC2282ACE300826197 /* routes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = routes.csv; sourceTree = "<group>"; };
 		9027C1BD2282ACE300826197 /* airlines.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airlines.csv; sourceTree = "<group>"; };
@@ -71,16 +77,6 @@
 		9027C1D12282C7A400826197 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		9027C1D32282C7B000826197 /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
 		9027C1D52282C7BA00826197 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
-		9027C1D82282E10500826197 /* EdgeWeightedDirectedCycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeWeightedDirectedCycle.swift; sourceTree = "<group>"; };
-		9027C1D92282E10500826197 /* SimplePriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePriorityQueue.swift; sourceTree = "<group>"; };
-		9027C1DA2282E10500826197 /* BellmanFordShortestPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BellmanFordShortestPath.swift; sourceTree = "<group>"; };
-		9027C1DB2282E10500826197 /* DirectedEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectedEdge.swift; sourceTree = "<group>"; };
-		9027C1DC2282E10500826197 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
-		9027C1DD2282E10500826197 /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
-		9027C1DE2282E10500826197 /* ATStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATStack.swift; sourceTree = "<group>"; };
-		9027C1DF2282E10500826197 /* ATQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATQueue.swift; sourceTree = "<group>"; };
-		9027C1E02282E10500826197 /* EdgeWeightedDigraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeWeightedDigraph.swift; sourceTree = "<group>"; };
-		9027C1E12282E10500826197 /* DijkstraShortestPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DijkstraShortestPath.swift; sourceTree = "<group>"; };
 		9027C1EC2282E6BB00826197 /* CSVHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVHelper.swift; path = TakeHomeChallenge/Utils/CSVHelper.swift; sourceTree = SOURCE_ROOT; };
 		90E87361228299EC0088CA10 /* TakeHomeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHomeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E87364228299EC0088CA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -172,16 +168,14 @@
 		9027C1D72282E0F000826197 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
-				9027C1DF2282E10500826197 /* ATQueue.swift */,
-				9027C1DE2282E10500826197 /* ATStack.swift */,
-				9027C1DA2282E10500826197 /* BellmanFordShortestPath.swift */,
-				9027C1DD2282E10500826197 /* Destination.swift */,
-				9027C1E12282E10500826197 /* DijkstraShortestPath.swift */,
-				9027C1DB2282E10500826197 /* DirectedEdge.swift */,
-				9027C1E02282E10500826197 /* EdgeWeightedDigraph.swift */,
-				9027C1D82282E10500826197 /* EdgeWeightedDirectedCycle.swift */,
-				9027C1D92282E10500826197 /* SimplePriorityQueue.swift */,
-				9027C1DC2282E10500826197 /* Vertex.swift */,
+				900E7AB42282FC7400978A81 /* AdjancencyList.swift */,
+				900E7AB72282FC7400978A81 /* Dijsktra.swift */,
+				900E7AB92282FC7400978A81 /* Edge.swift */,
+				900E7AB62282FC7400978A81 /* Graph.swift */,
+				900E7ABA2282FC7400978A81 /* Heap.swift */,
+				900E7AB52282FC7400978A81 /* PriorityQueue.swift */,
+				900E7AB82282FC7400978A81 /* Queue.swift */,
+				900E7AB32282FC7400978A81 /* Vertex.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -507,23 +501,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900E7ABE2282FC7400978A81 /* Graph.swift in Sources */,
+				900E7AC02282FC7400978A81 /* Queue.swift in Sources */,
+				900E7ABF2282FC7400978A81 /* Dijsktra.swift in Sources */,
+				900E7AC22282FC7400978A81 /* Heap.swift in Sources */,
 				90E87365228299EC0088CA10 /* AppDelegate.swift in Sources */,
-				9027C1E32282E10500826197 /* SimplePriorityQueue.swift in Sources */,
-				9027C1E92282E10500826197 /* ATQueue.swift in Sources */,
-				9027C1E52282E10500826197 /* DirectedEdge.swift in Sources */,
+				900E7ABC2282FC7400978A81 /* AdjancencyList.swift in Sources */,
 				9027C1C82282B36000826197 /* GLRouteSearchController.swift in Sources */,
+				900E7ABB2282FC7400978A81 /* Vertex.swift in Sources */,
 				9027C1D22282C7A400826197 /* Airport.swift in Sources */,
-				9027C1E72282E10500826197 /* Destination.swift in Sources */,
-				9027C1E42282E10500826197 /* BellmanFordShortestPath.swift in Sources */,
-				9027C1E62282E10500826197 /* Vertex.swift in Sources */,
-				9027C1EB2282E10500826197 /* DijkstraShortestPath.swift in Sources */,
+				900E7AC12282FC7400978A81 /* Edge.swift in Sources */,
 				9027C1CD2282B3E900826197 /* Constants.swift in Sources */,
+				900E7ABD2282FC7400978A81 /* PriorityQueue.swift in Sources */,
 				9027C1ED2282E6BB00826197 /* CSVHelper.swift in Sources */,
 				9027C1D62282C7BA00826197 /* Route.swift in Sources */,
 				9027C1CA2282B37E00826197 /* GLRouteSearchViewModel.swift in Sources */,
-				9027C1EA2282E10500826197 /* EdgeWeightedDigraph.swift in Sources */,
-				9027C1E82282E10500826197 /* ATStack.swift in Sources */,
-				9027C1E22282E10500826197 /* EdgeWeightedDirectedCycle.swift in Sources */,
 				9027C1D42282C7B000826197 /* Airline.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
