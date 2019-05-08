@@ -13,8 +13,8 @@ struct Airport : Decodable{
     var name:String
     var city:String
     var country:String
-    var latitude:Double?
-    var longitude:Double?
+    var latitude:Double
+    var longitude:Double
     enum CodingKeys: String, CodingKey {
         case iata = "IATA 3"
         case name = "Name"

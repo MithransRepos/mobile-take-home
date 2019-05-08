@@ -33,6 +33,7 @@
 		90E8736F228299ED0088CA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E8736D228299ED0088CA10 /* LaunchScreen.storyboard */; };
 		90E8737A228299ED0088CA10 /* TakeHomeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87379228299ED0088CA10 /* TakeHomeChallengeTests.swift */; };
 		90E87385228299ED0088CA10 /* TakeHomeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87384228299ED0088CA10 /* TakeHomeChallengeUITests.swift */; };
+		90F52782228320FF0074455A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F52781228320FF0074455A /* UIViewControllerExtension.swift */; };
 		BDBFB81C3957C0BE93F0B98C /* Pods_TakeHomeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029A154DA630C6ABDDC77245 /* Pods_TakeHomeChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		90E87380228299ED0088CA10 /* TakeHomeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E87384228299ED0088CA10 /* TakeHomeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeChallengeUITests.swift; sourceTree = "<group>"; };
 		90E87386228299ED0088CA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F52781228320FF0074455A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		B11C4F567E4BAC0859FE2E9C /* Pods-TakeHomeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeHomeChallenge/Pods-TakeHomeChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		CD422441EFB9FB2FC524CCBD /* Pods-TakeHomeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeHomeChallengeTests/Pods-TakeHomeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF1B8DBEAC6E02A724E63504 /* Pods-TakeHomeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeHomeChallengeTests/Pods-TakeHomeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -205,13 +207,13 @@
 		90E87363228299EC0088CA10 /* TakeHomeChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				9027C1D72282E0F000826197 /* Graph */,
-				9027C1D02282C79500826197 /* Model */,
+				90F52780228320EC0074455A /* Extensions */,
 				90E873922282A2890088CA10 /* Storyboards */,
 				90E873932282A4710088CA10 /* ViewControllers */,
 				90E873942282A4810088CA10 /* ViewModels */,
+				9027C1D72282E0F000826197 /* Graph */,
+				9027C1D02282C79500826197 /* Model */,
 				90E873962282A6B30088CA10 /* Utils */,
-				90E873952282A4900088CA10 /* Extensions */,
 				9027C1B42282AC9F00826197 /* data */,
 				90E87364228299EC0088CA10 /* AppDelegate.swift */,
 				90E8736B228299ED0088CA10 /* Assets.xcassets */,
@@ -263,19 +265,20 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		90E873952282A4900088CA10 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		90E873962282A6B30088CA10 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				9027C1CB2282B3D300826197 /* Constants */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		90F52780228320EC0074455A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				90F52781228320FF0074455A /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CE276973815CD2313708E5A8 /* Frameworks */ = {
@@ -505,6 +508,7 @@
 				900E7AC02282FC7400978A81 /* Queue.swift in Sources */,
 				900E7ABF2282FC7400978A81 /* Dijsktra.swift in Sources */,
 				900E7AC22282FC7400978A81 /* Heap.swift in Sources */,
+				90F52782228320FF0074455A /* UIViewControllerExtension.swift in Sources */,
 				90E87365228299EC0088CA10 /* AppDelegate.swift in Sources */,
 				900E7ABC2282FC7400978A81 /* AdjancencyList.swift in Sources */,
 				9027C1C82282B36000826197 /* GLRouteSearchController.swift in Sources */,
