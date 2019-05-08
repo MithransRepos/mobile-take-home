@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GLRouteSearchController.swift
 //  TakeHomeChallenge
 //
 //  Created by Mithran Natarajan on 5/8/19.
@@ -8,18 +8,21 @@
 
 import UIKit
 
-class GuestLogixAirportSearchController: UIViewController {
-
+class GLRouteSearchController: UIViewController {
+    
+    let viewModel = GLRouteSearchViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.setupNavigationItems()
+        
     }
 
 
 }
 
-extension GuestLogixAirportSearchController{
+extension GLRouteSearchController{
     private func setupNavigationItems(){
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Search", style:UIBarButtonItem.Style.plain, target: self, action: #selector(search))
     }
@@ -27,5 +30,7 @@ extension GuestLogixAirportSearchController{
     @objc func search(){
        
     }
+    
+    
 }
 

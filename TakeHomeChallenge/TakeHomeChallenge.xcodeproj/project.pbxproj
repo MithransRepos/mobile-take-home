@@ -7,13 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15BB4F9F107ABD8E71E1B0CF /* Pods_TakeHomeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789266FB5FDCEE07037ED9AD /* Pods_TakeHomeChallenge.framework */; };
+		5026FE2290177BB5D98A53DF /* Pods_TakeHomeChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA39AC0A98B63DC876DD6FF /* Pods_TakeHomeChallengeUITests.framework */; };
+		9027C1BE2282ACE300826197 /* airports.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9027C1BB2282ACE300826197 /* airports.csv */; };
+		9027C1BF2282ACE300826197 /* routes.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9027C1BC2282ACE300826197 /* routes.csv */; };
+		9027C1C02282ACE300826197 /* airlines.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9027C1BD2282ACE300826197 /* airlines.csv */; };
+		9027C1C82282B36000826197 /* GLRouteSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1C72282B36000826197 /* GLRouteSearchController.swift */; };
+		9027C1CA2282B37E00826197 /* GLRouteSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1C92282B37E00826197 /* GLRouteSearchViewModel.swift */; };
+		9027C1CD2282B3E900826197 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1CC2282B3E900826197 /* Constants.swift */; };
+		9027C1D22282C7A400826197 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1D12282C7A400826197 /* Airport.swift */; };
+		9027C1D42282C7B000826197 /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1D32282C7B000826197 /* Airline.swift */; };
+		9027C1D62282C7BA00826197 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1D52282C7BA00826197 /* Route.swift */; };
+		9027C1E22282E10500826197 /* EdgeWeightedDirectedCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1D82282E10500826197 /* EdgeWeightedDirectedCycle.swift */; };
+		9027C1E32282E10500826197 /* SimplePriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1D92282E10500826197 /* SimplePriorityQueue.swift */; };
+		9027C1E42282E10500826197 /* BellmanFordShortestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1DA2282E10500826197 /* BellmanFordShortestPath.swift */; };
+		9027C1E52282E10500826197 /* DirectedEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1DB2282E10500826197 /* DirectedEdge.swift */; };
+		9027C1E62282E10500826197 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1DC2282E10500826197 /* Vertex.swift */; };
+		9027C1E72282E10500826197 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1DD2282E10500826197 /* Destination.swift */; };
+		9027C1E82282E10500826197 /* ATStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1DE2282E10500826197 /* ATStack.swift */; };
+		9027C1E92282E10500826197 /* ATQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1DF2282E10500826197 /* ATQueue.swift */; };
+		9027C1EA2282E10500826197 /* EdgeWeightedDigraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1E02282E10500826197 /* EdgeWeightedDigraph.swift */; };
+		9027C1EB2282E10500826197 /* DijkstraShortestPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1E12282E10500826197 /* DijkstraShortestPath.swift */; };
+		9027C1ED2282E6BB00826197 /* CSVHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027C1EC2282E6BB00826197 /* CSVHelper.swift */; };
 		90E87365228299EC0088CA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87364228299EC0088CA10 /* AppDelegate.swift */; };
-		90E87367228299EC0088CA10 /* GuestLogixAirportSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87366228299EC0088CA10 /* GuestLogixAirportSearchController.swift */; };
 		90E8736A228299EC0088CA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E87368228299EC0088CA10 /* Main.storyboard */; };
 		90E8736C228299ED0088CA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90E8736B228299ED0088CA10 /* Assets.xcassets */; };
 		90E8736F228299ED0088CA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E8736D228299ED0088CA10 /* LaunchScreen.storyboard */; };
 		90E8737A228299ED0088CA10 /* TakeHomeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87379228299ED0088CA10 /* TakeHomeChallengeTests.swift */; };
 		90E87385228299ED0088CA10 /* TakeHomeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87384228299ED0088CA10 /* TakeHomeChallengeUITests.swift */; };
+		BDBFB81C3957C0BE93F0B98C /* Pods_TakeHomeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029A154DA630C6ABDDC77245 /* Pods_TakeHomeChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +56,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		029A154DA630C6ABDDC77245 /* Pods_TakeHomeChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeHomeChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EA39AC0A98B63DC876DD6FF /* Pods_TakeHomeChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeHomeChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EFBD001287EDC1823051CF9 /* Pods-TakeHomeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeHomeChallenge/Pods-TakeHomeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		789266FB5FDCEE07037ED9AD /* Pods_TakeHomeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeHomeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		859491DDAE03F3483AC7D65B /* Pods-TakeHomeChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeHomeChallengeUITests/Pods-TakeHomeChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		862E39F5BF381B62394395AC /* Pods-TakeHomeChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeHomeChallengeUITests/Pods-TakeHomeChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9027C1BB2282ACE300826197 /* airports.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airports.csv; sourceTree = "<group>"; };
+		9027C1BC2282ACE300826197 /* routes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = routes.csv; sourceTree = "<group>"; };
+		9027C1BD2282ACE300826197 /* airlines.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airlines.csv; sourceTree = "<group>"; };
+		9027C1C72282B36000826197 /* GLRouteSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLRouteSearchController.swift; sourceTree = "<group>"; };
+		9027C1C92282B37E00826197 /* GLRouteSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLRouteSearchViewModel.swift; sourceTree = "<group>"; };
+		9027C1CC2282B3E900826197 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9027C1D12282C7A400826197 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		9027C1D32282C7B000826197 /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
+		9027C1D52282C7BA00826197 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		9027C1D82282E10500826197 /* EdgeWeightedDirectedCycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeWeightedDirectedCycle.swift; sourceTree = "<group>"; };
+		9027C1D92282E10500826197 /* SimplePriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePriorityQueue.swift; sourceTree = "<group>"; };
+		9027C1DA2282E10500826197 /* BellmanFordShortestPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BellmanFordShortestPath.swift; sourceTree = "<group>"; };
+		9027C1DB2282E10500826197 /* DirectedEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectedEdge.swift; sourceTree = "<group>"; };
+		9027C1DC2282E10500826197 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		9027C1DD2282E10500826197 /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		9027C1DE2282E10500826197 /* ATStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATStack.swift; sourceTree = "<group>"; };
+		9027C1DF2282E10500826197 /* ATQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATQueue.swift; sourceTree = "<group>"; };
+		9027C1E02282E10500826197 /* EdgeWeightedDigraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeWeightedDigraph.swift; sourceTree = "<group>"; };
+		9027C1E12282E10500826197 /* DijkstraShortestPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DijkstraShortestPath.swift; sourceTree = "<group>"; };
+		9027C1EC2282E6BB00826197 /* CSVHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVHelper.swift; path = TakeHomeChallenge/Utils/CSVHelper.swift; sourceTree = SOURCE_ROOT; };
 		90E87361228299EC0088CA10 /* TakeHomeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHomeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E87364228299EC0088CA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90E87366228299EC0088CA10 /* GuestLogixAirportSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestLogixAirportSearchController.swift; sourceTree = "<group>"; };
 		90E87369228299EC0088CA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90E8736B228299ED0088CA10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90E8736E228299ED0088CA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +94,9 @@
 		90E87380228299ED0088CA10 /* TakeHomeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E87384228299ED0088CA10 /* TakeHomeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeChallengeUITests.swift; sourceTree = "<group>"; };
 		90E87386228299ED0088CA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B11C4F567E4BAC0859FE2E9C /* Pods-TakeHomeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeHomeChallenge/Pods-TakeHomeChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		CD422441EFB9FB2FC524CCBD /* Pods-TakeHomeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeHomeChallengeTests/Pods-TakeHomeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF1B8DBEAC6E02A724E63504 /* Pods-TakeHomeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeHomeChallengeTests/Pods-TakeHomeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BB4F9F107ABD8E71E1B0CF /* Pods_TakeHomeChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDBFB81C3957C0BE93F0B98C /* Pods_TakeHomeChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +120,72 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5026FE2290177BB5D98A53DF /* Pods_TakeHomeChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002A2C5A4DE2F11D5298AB80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EFBD001287EDC1823051CF9 /* Pods-TakeHomeChallenge.debug.xcconfig */,
+				B11C4F567E4BAC0859FE2E9C /* Pods-TakeHomeChallenge.release.xcconfig */,
+				CD422441EFB9FB2FC524CCBD /* Pods-TakeHomeChallengeTests.debug.xcconfig */,
+				CF1B8DBEAC6E02A724E63504 /* Pods-TakeHomeChallengeTests.release.xcconfig */,
+				859491DDAE03F3483AC7D65B /* Pods-TakeHomeChallengeUITests.debug.xcconfig */,
+				862E39F5BF381B62394395AC /* Pods-TakeHomeChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9027C1B42282AC9F00826197 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				9027C1BD2282ACE300826197 /* airlines.csv */,
+				9027C1BB2282ACE300826197 /* airports.csv */,
+				9027C1BC2282ACE300826197 /* routes.csv */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		9027C1CB2282B3D300826197 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9027C1EC2282E6BB00826197 /* CSVHelper.swift */,
+				9027C1CC2282B3E900826197 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9027C1D02282C79500826197 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9027C1D12282C7A400826197 /* Airport.swift */,
+				9027C1D32282C7B000826197 /* Airline.swift */,
+				9027C1D52282C7BA00826197 /* Route.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9027C1D72282E0F000826197 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				9027C1DF2282E10500826197 /* ATQueue.swift */,
+				9027C1DE2282E10500826197 /* ATStack.swift */,
+				9027C1DA2282E10500826197 /* BellmanFordShortestPath.swift */,
+				9027C1DD2282E10500826197 /* Destination.swift */,
+				9027C1E12282E10500826197 /* DijkstraShortestPath.swift */,
+				9027C1DB2282E10500826197 /* DirectedEdge.swift */,
+				9027C1E02282E10500826197 /* EdgeWeightedDigraph.swift */,
+				9027C1D82282E10500826197 /* EdgeWeightedDirectedCycle.swift */,
+				9027C1D92282E10500826197 /* SimplePriorityQueue.swift */,
+				9027C1DC2282E10500826197 /* Vertex.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
 		90E87358228299EC0088CA10 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +193,8 @@
 				90E87378228299ED0088CA10 /* TakeHomeChallengeTests */,
 				90E87383228299ED0088CA10 /* TakeHomeChallengeUITests */,
 				90E87362228299EC0088CA10 /* Products */,
+				002A2C5A4DE2F11D5298AB80 /* Pods */,
+				CE276973815CD2313708E5A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +211,14 @@
 		90E87363228299EC0088CA10 /* TakeHomeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				9027C1D72282E0F000826197 /* Graph */,
+				9027C1D02282C79500826197 /* Model */,
+				90E873922282A2890088CA10 /* Storyboards */,
+				90E873932282A4710088CA10 /* ViewControllers */,
+				90E873942282A4810088CA10 /* ViewModels */,
 				90E873962282A6B30088CA10 /* Utils */,
 				90E873952282A4900088CA10 /* Extensions */,
-				90E873942282A4810088CA10 /* ViewModels */,
-				90E873932282A4710088CA10 /* ViewControllers */,
-				90E873922282A2890088CA10 /* storyboards */,
+				9027C1B42282AC9F00826197 /* data */,
 				90E87364228299EC0088CA10 /* AppDelegate.swift */,
 				90E8736B228299ED0088CA10 /* Assets.xcassets */,
 				90E87370228299ED0088CA10 /* Info.plist */,
@@ -127,19 +244,19 @@
 			path = TakeHomeChallengeUITests;
 			sourceTree = "<group>";
 		};
-		90E873922282A2890088CA10 /* storyboards */ = {
+		90E873922282A2890088CA10 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				90E87368228299EC0088CA10 /* Main.storyboard */,
 				90E8736D228299ED0088CA10 /* LaunchScreen.storyboard */,
 			);
-			path = storyboards;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		90E873932282A4710088CA10 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				90E87366228299EC0088CA10 /* GuestLogixAirportSearchController.swift */,
+				9027C1C72282B36000826197 /* GLRouteSearchController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -147,6 +264,7 @@
 		90E873942282A4810088CA10 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9027C1C92282B37E00826197 /* GLRouteSearchViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -161,8 +279,19 @@
 		90E873962282A6B30088CA10 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9027C1CB2282B3D300826197 /* Constants */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		CE276973815CD2313708E5A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				789266FB5FDCEE07037ED9AD /* Pods_TakeHomeChallenge.framework */,
+				029A154DA630C6ABDDC77245 /* Pods_TakeHomeChallengeTests.framework */,
+				0EA39AC0A98B63DC876DD6FF /* Pods_TakeHomeChallengeUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,9 +301,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90E87389228299ED0088CA10 /* Build configuration list for PBXNativeTarget "TakeHomeChallenge" */;
 			buildPhases = (
+				247BF6B5DD741F92AEB795F6 /* [CP] Check Pods Manifest.lock */,
 				90E8735D228299EC0088CA10 /* Sources */,
 				90E8735E228299EC0088CA10 /* Frameworks */,
 				90E8735F228299EC0088CA10 /* Resources */,
+				1113737B766A218A850DF325 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +320,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90E8738C228299ED0088CA10 /* Build configuration list for PBXNativeTarget "TakeHomeChallengeTests" */;
 			buildPhases = (
+				5934B59D0E19C66860B7F6AA /* [CP] Check Pods Manifest.lock */,
 				90E87371228299ED0088CA10 /* Sources */,
 				90E87372228299ED0088CA10 /* Frameworks */,
 				90E87373228299ED0088CA10 /* Resources */,
@@ -207,6 +339,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90E8738F228299ED0088CA10 /* Build configuration list for PBXNativeTarget "TakeHomeChallengeUITests" */;
 			buildPhases = (
+				66F1BD91A82774F27C5BF61B /* [CP] Check Pods Manifest.lock */,
 				90E8737C228299ED0088CA10 /* Sources */,
 				90E8737D228299ED0088CA10 /* Frameworks */,
 				90E8737E228299ED0088CA10 /* Resources */,
@@ -269,9 +402,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9027C1BF2282ACE300826197 /* routes.csv in Resources */,
 				90E8736F228299ED0088CA10 /* LaunchScreen.storyboard in Resources */,
 				90E8736C228299ED0088CA10 /* Assets.xcassets in Resources */,
+				9027C1BE2282ACE300826197 /* airports.csv in Resources */,
 				90E8736A228299EC0088CA10 /* Main.storyboard in Resources */,
+				9027C1C02282ACE300826197 /* airlines.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,13 +427,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1113737B766A218A850DF325 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TakeHomeChallenge/Pods-TakeHomeChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSV.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TakeHomeChallenge/Pods-TakeHomeChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		247BF6B5DD741F92AEB795F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeHomeChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5934B59D0E19C66860B7F6AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeHomeChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66F1BD91A82774F27C5BF61B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeHomeChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		90E8735D228299EC0088CA10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90E87367228299EC0088CA10 /* GuestLogixAirportSearchController.swift in Sources */,
 				90E87365228299EC0088CA10 /* AppDelegate.swift in Sources */,
+				9027C1E32282E10500826197 /* SimplePriorityQueue.swift in Sources */,
+				9027C1E92282E10500826197 /* ATQueue.swift in Sources */,
+				9027C1E52282E10500826197 /* DirectedEdge.swift in Sources */,
+				9027C1C82282B36000826197 /* GLRouteSearchController.swift in Sources */,
+				9027C1D22282C7A400826197 /* Airport.swift in Sources */,
+				9027C1E72282E10500826197 /* Destination.swift in Sources */,
+				9027C1E42282E10500826197 /* BellmanFordShortestPath.swift in Sources */,
+				9027C1E62282E10500826197 /* Vertex.swift in Sources */,
+				9027C1EB2282E10500826197 /* DijkstraShortestPath.swift in Sources */,
+				9027C1CD2282B3E900826197 /* Constants.swift in Sources */,
+				9027C1ED2282E6BB00826197 /* CSVHelper.swift in Sources */,
+				9027C1D62282C7BA00826197 /* Route.swift in Sources */,
+				9027C1CA2282B37E00826197 /* GLRouteSearchViewModel.swift in Sources */,
+				9027C1EA2282E10500826197 /* EdgeWeightedDigraph.swift in Sources */,
+				9027C1E82282E10500826197 /* ATStack.swift in Sources */,
+				9027C1E22282E10500826197 /* EdgeWeightedDirectedCycle.swift in Sources */,
+				9027C1D42282C7B000826197 /* Airline.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +697,7 @@
 		};
 		90E8738A228299ED0088CA10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EFBD001287EDC1823051CF9 /* Pods-TakeHomeChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -488,6 +716,7 @@
 		};
 		90E8738B228299ED0088CA10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B11C4F567E4BAC0859FE2E9C /* Pods-TakeHomeChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +735,7 @@
 		};
 		90E8738D228299ED0088CA10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD422441EFB9FB2FC524CCBD /* Pods-TakeHomeChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -527,6 +757,7 @@
 		};
 		90E8738E228299ED0088CA10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF1B8DBEAC6E02A724E63504 /* Pods-TakeHomeChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,6 +779,7 @@
 		};
 		90E87390228299ED0088CA10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 859491DDAE03F3483AC7D65B /* Pods-TakeHomeChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,6 +800,7 @@
 		};
 		90E87391228299ED0088CA10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 862E39F5BF381B62394395AC /* Pods-TakeHomeChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
