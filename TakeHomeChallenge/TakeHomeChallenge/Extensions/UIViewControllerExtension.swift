@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+
+/*
+ ViewController extensions
+ */
 extension UIViewController{
     
     func showAlert(alertTitle title: String?, alertMessage message: String) {

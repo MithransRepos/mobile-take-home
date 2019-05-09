@@ -35,6 +35,7 @@
 		90E87385228299ED0088CA10 /* TakeHomeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E87384228299ED0088CA10 /* TakeHomeChallengeUITests.swift */; };
 		90F52782228320FF0074455A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F52781228320FF0074455A /* UIViewControllerExtension.swift */; };
 		90F5278422832C290074455A /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5278322832C290074455A /* MapPin.swift */; };
+		90F527862284026C0074455A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F527852284026C0074455A /* StringExtensions.swift */; };
 		BDBFB81C3957C0BE93F0B98C /* Pods_TakeHomeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029A154DA630C6ABDDC77245 /* Pods_TakeHomeChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		90E87386228299ED0088CA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90F52781228320FF0074455A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		90F5278322832C290074455A /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		90F527852284026C0074455A /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		B11C4F567E4BAC0859FE2E9C /* Pods-TakeHomeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeHomeChallenge/Pods-TakeHomeChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		CD422441EFB9FB2FC524CCBD /* Pods-TakeHomeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TakeHomeChallengeTests/Pods-TakeHomeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF1B8DBEAC6E02A724E63504 /* Pods-TakeHomeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeHomeChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TakeHomeChallengeTests/Pods-TakeHomeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				90F52781228320FF0074455A /* UIViewControllerExtension.swift */,
+				90F527852284026C0074455A /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 				9027C1D62282C7BA00826197 /* Route.swift in Sources */,
 				9027C1CA2282B37E00826197 /* GLRouteSearchViewModel.swift in Sources */,
 				9027C1D42282C7B000826197 /* Airline.swift in Sources */,
+				90F527862284026C0074455A /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

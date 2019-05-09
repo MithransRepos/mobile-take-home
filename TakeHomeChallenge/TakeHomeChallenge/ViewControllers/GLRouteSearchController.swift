@@ -14,13 +14,15 @@ class GLRouteSearchController: UIViewController {
     @IBOutlet weak var sourceAirportSearchbar: UISearchBar!
     @IBOutlet weak var destinationAirportSearchbar: UISearchBar!
     @IBOutlet weak var mapView: MKMapView!
-    
     @IBOutlet weak var routeLabel: UILabel!
+    
+    /*
+     ViewModel instance // MVVM pattern
+     */
     let viewModel = GLRouteSearchViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         self.setupNavigationItems()
         self.setupDelegate()
         self.hideKeyboardOnTouchOutside()
@@ -30,7 +32,7 @@ class GLRouteSearchController: UIViewController {
     private func setupDelegate(){
         self.sourceAirportSearchbar.delegate = self
         self.destinationAirportSearchbar.delegate = self
-        self.viewModel.delegate = self
+        self.viewModel.delegate = self // viewModel delegate
         self.mapView.delegate = self
     }
     
@@ -42,6 +44,9 @@ class GLRouteSearchController: UIViewController {
     
 }
 
+/*
+ Navigation related functions
+ */
 extension GLRouteSearchController{
     
     private func setupNavigationItems(){
@@ -53,6 +58,9 @@ extension GLRouteSearchController{
     }
 }
 
+/*
+ UISearchbar delagte functions
+ */
 extension GLRouteSearchController: UISearchBarDelegate{
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -65,6 +73,10 @@ extension GLRouteSearchController: UISearchBarDelegate{
     }
 }
 
+
+/*
+ ViewModelDelegate functions
+ */
 extension GLRouteSearchController: GLRouteSearchViewModelDelegate{
     
     func showErrorMessage(message: String) {
@@ -83,6 +95,9 @@ extension GLRouteSearchController: GLRouteSearchViewModelDelegate{
     
 }
 
+/*
+ Mapview related functions
+ */
 extension GLRouteSearchController{
     
     private func drawRouteInMap(route: RouteInfo){
@@ -99,6 +114,9 @@ extension GLRouteSearchController{
     
 }
 
+/*
+ Mapview delegate functions
+ */
 extension GLRouteSearchController: MKMapViewDelegate{
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -109,14 +127,4 @@ extension GLRouteSearchController: MKMapViewDelegate{
     }
     
 }
-extension String
-{
-    func stringByReplacingFirstOccurrenceOfString(
-        target: String, withString replaceString: String) -> String
-    {
-        if let range = self.range(of: target) {
-            return self.replacingCharacters(in: range, with: replaceString)
-        }
-        return self
-    }
-}
+

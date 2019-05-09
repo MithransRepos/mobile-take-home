@@ -9,17 +9,26 @@
 import Foundation
 import CoreLocation
 
+/*
+ Protocol oriented programming
+*/
 protocol GLRouteSearchViewModelDelegate {
     func showErrorMessage(message: String)
     func searchSuccess(route: RouteInfo)
 }
+// type alias for tuples
 typealias RouteInfo = (aiports: [Airport], coordinates: [CLLocationCoordinate2D], path: String)
+
 class GLRouteSearchViewModel {
     
     private var graph = AdjacencyList<Airport>()
     private var airlineMap: [String: Airline] = [:]
     private var airportVertexMap: [String: Vertex<Airport>] = [:]
     private var dijkstraGraph: Dijsktra<Airport>?
+    
+    /*
+     viewModel delegate
+    */
     var delegate: GLRouteSearchViewModelDelegate?
     
     
@@ -27,7 +36,9 @@ class GLRouteSearchViewModel {
         self.computeGraph()
     }
     
-    
+    /*
+     CSV to graph
+    */
     private func computeGraph() {
         self.airlineMap = CSVHelper.parseAirlineCSV()
         self.airportVertexMap = CSVHelper.parseAirportCSV(graph: &graph)
@@ -72,6 +83,10 @@ class GLRouteSearchViewModel {
         points.append(CLLocationCoordinate2DMake(airport.latitude, airport.longitude))
     }
 }
+
+/*
+  ViewModel functions are grouped in this extension
+*/
 extension GLRouteSearchViewModel{
     
     func search(origin: String?, destination: String?){
