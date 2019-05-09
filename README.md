@@ -4,6 +4,7 @@
 2. Have followed MVVM design pattern
 3. Have used Dijkstra algorithm to solved the shorted distance problem
 4. Have used Mapkit to display the route
+5. Have modified airlines.csv 2 Digit code of Air china from CA to AC as in routes.csv there was no CA found  
 
 Please let me know the feedback
 
