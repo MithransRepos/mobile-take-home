@@ -9,10 +9,10 @@
 import Foundation
 
 struct  Airline: Decodable {
-    var name:String
-    var twoDigitCode:String
-    var threeDigitCode:String
-    var country:String
+    let name:String
+    let twoDigitCode:String
+    let threeDigitCode:String
+    let country:String
     
     enum CodingKeys: String, CodingKey {
         case name = "Name"

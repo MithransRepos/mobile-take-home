@@ -9,12 +9,12 @@
 import Foundation
 
 struct Airport : Decodable{
-    var iata:String
-    var name:String
-    var city:String
-    var country:String
-    var latitude:Double
-    var longitude:Double
+    let iata:String
+    let name:String
+    let city:String
+    let country:String
+    let latitude:Double
+    let longitude:Double
     enum CodingKeys: String, CodingKey {
         case iata = "IATA 3"
         case name = "Name"
